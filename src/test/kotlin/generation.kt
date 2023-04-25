@@ -50,7 +50,7 @@ declare i32 @atoi(...)
 declare i32 @printf(i8*, ...)
 
 define i32 @main(i32, i8**) {
-
+    
     ; unnamed block
     %tmpValue0 = icmp eq i32 %0, 3
     br i1 %tmpValue0, label %okParams, label %koParams
