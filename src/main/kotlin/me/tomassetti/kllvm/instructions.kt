@@ -42,7 +42,11 @@ class JumpInstruction(val label: Label) : Instruction {
 
 enum class ComparisonType(val code: String) {
     Equal("eq"),
-    NotEqual("ne")
+    NotEqual("ne"),
+    LessEqual("le"),
+    Less("lt"),
+    GreaterEqual("ge"),
+    Greater("gt")
 }
 
 data class Comparison(val comparisonType: ComparisonType, val left: Value, val right: Value) : Instruction {
